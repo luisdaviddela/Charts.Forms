@@ -101,8 +101,7 @@ namespace Charts.Forms_Demo
                 Color = SKColor.Parse("#2E4053"),
                 TextColor = SKColor.Parse("#DF013A"),
             },
-        };
-
+            };
             return data;
         }
     }
