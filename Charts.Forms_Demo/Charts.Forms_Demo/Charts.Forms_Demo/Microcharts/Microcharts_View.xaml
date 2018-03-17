@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Charts.Forms_Demo"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="Charts.Forms_Demo.Microcharts_View">
+    <ScrollView>
+        <StackLayout Padding="30" Spacing="30">
+            <Label Text="The XamSharp blog"/>
+            <forms:ChartView x:Name="Chartedemo1"  HeightRequest="300"/>
+            <forms:ChartView x:Name="Chartedemo"  HeightRequest="300"/>
+            <forms:ChartView x:Name="Chartedemo2"  HeightRequest="300"/>
+            <forms:ChartView x:Name="Chartedemo3"  HeightRequest="300"/>
+            <forms:ChartView x:Name="Chartedemo4"  HeightRequest="300"/>
+            <forms:ChartView x:Name="Chartedemo5"  HeightRequest="300"/>
+            <forms:ChartView x:Name="Chartedemo6"  HeightRequest="300"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
