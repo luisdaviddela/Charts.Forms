@@ -13,7 +13,7 @@ namespace Charts.Forms_Demo
 		{
 			InitializeComponent();
 
-			MainPage = new Charts.Forms_Demo.Microcharts_View();
+			MainPage = new Charts.Forms_Demo.Oxyplt_ViewChart();
 		}
 
 		protected override void OnStart ()

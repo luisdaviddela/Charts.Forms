@@ -24,8 +24,4 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="OxyPlot\" />
-  </ItemGroup>
 </Project>
