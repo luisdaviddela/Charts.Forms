@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             BackgroundColor="White"
+             x:Class="Charts.Forms_Demo.ChartLinesMaster">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Picker x:Name="Pozos" Grid.Row="0"/>
+            <chart:SfChart Grid.Row="1" >
+
+                <!--LO UNICO QUE HACE ES HACER LAS COLUMNAS MÁS DELGADAS-->
+                <!--<chart:ColumnSeries>
+
+            <chart:ColumnSeries.DataMarker>
+
+                <chart:ChartDataMarker/>
+
+            </chart:ColumnSeries.DataMarker>
+
+        </chart:ColumnSeries>-->
+                <!--ZOOM-->
+                <chart:SfChart.ChartBehaviors>
+                    <chart:ChartZoomPanBehavior ZoomMode="XY"/>
+                </chart:SfChart.ChartBehaviors>
+                <!--TITULOOOOOO-->
+                <chart:SfChart.Title>
+
+                    <chart:ChartTitle Text="Presupuesto Inicial México"/>
+
+                </chart:SfChart.Title>
+                <!--PARTE DE ABAJO-->
+                <chart:SfChart.PrimaryAxis>
+                    <chart:CategoryAxis EnableAutoIntervalOnZooming="True">
+                        <chart:CategoryAxis.Title>
+                            <chart:ChartAxisTitle Text="Fechas"></chart:ChartAxisTitle>
+                        </chart:CategoryAxis.Title>
+                    </chart:CategoryAxis>
+                </chart:SfChart.PrimaryAxis>
+                <!--LATERAL DE LADO IZQUIER-->
+                <chart:SfChart.SecondaryAxis>
+                    <chart:NumericalAxis>
+                        <chart:NumericalAxis.Title>
+
+                            <chart:ChartAxisTitle Text="MMUSD"></chart:ChartAxisTitle>
+
+                        </chart:NumericalAxis.Title>
+                    </chart:NumericalAxis>
+                </chart:SfChart.SecondaryAxis>
+                <!--BINDING  CHARTS-->
+
+                <chart:SfChart.Series>
+
+                    <chart:LineSeries  ItemsSource="{Binding Serie1}" 
+                               Label="Presupuesto (USD)"
+                                SelectedDataPointColor="Azure"
+                               Color="LightSkyBlue"
+                               EnableDataPointSelection="True"
+                                XBindingPath="Name" 
+                                YBindingPath="Height">
+                        <chart:LineSeries.DataMarker>
+                            <chart:ChartDataMarker ShowLabel="False" ShowMarker="True"
+                                           MarkerHeight="8"
+                                           MarkerWidth="8"
+                                           MarkerColor="LightSkyBlue" 
+                                           MarkerType="Ellipse"/>
+                        </chart:LineSeries.DataMarker>
+                    </chart:LineSeries>
+                    <chart:LineSeries  ItemsSource="{Binding Serie2}" 
+                                XBindingPath="Name" 
+                               SelectedDataPointColor="Black"
+                               Color="Black"
+                                YBindingPath="Height">
+                        <chart:LineSeries.DataMarker>
+                            <chart:ChartDataMarker ShowLabel="False" ShowMarker="True"
+                                           MarkerHeight="8"
+                                           MarkerWidth="8"
+                                           MarkerColor="Black" 
+                                           MarkerType="Ellipse"/>
+                        </chart:LineSeries.DataMarker>
+                    </chart:LineSeries>
+
+                </chart:SfChart.Series>
+            </chart:SfChart>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
