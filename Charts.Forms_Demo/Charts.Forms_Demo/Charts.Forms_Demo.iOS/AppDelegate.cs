@@ -22,7 +22,9 @@ namespace Charts.Forms_Demo.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            new Syncfusion.SfNavigationDrawer.XForms.iOS.SfNavigationDrawerRenderer();
             global::Xamarin.Forms.Forms.Init();
+            Syncfusion.SfChart.XForms.iOS.Renderers.SfChartRenderer.Init();
             OxyPlot.Xamarin.Forms.Platform.iOS.PlotViewRenderer.Init();
             LoadApplication(new App());
 

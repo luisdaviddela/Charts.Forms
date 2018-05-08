@@ -14,7 +14,7 @@ namespace Charts.Forms_Demo
             Content = new PlotView
             {
                 //Model = data.CreateArea(),
-                Model = data.CreatePieChart(),
+               Model = data.CreatePieChart(),
                 VerticalOptions = LayoutOptions.Fill,
                 HorizontalOptions = LayoutOptions.Fill,
             };

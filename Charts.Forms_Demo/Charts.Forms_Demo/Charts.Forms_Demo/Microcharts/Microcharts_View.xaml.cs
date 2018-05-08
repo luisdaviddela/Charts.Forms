@@ -20,7 +20,7 @@ namespace Charts.Forms_Demo
             Chartedemo1.Chart = new DonutChart { Entries = data.GetChart() };
             Chartedemo2.Chart = new PieChart { Entries = data.GetChart() };
             Chartedemo3.Chart = new PointChart { Entries = data.GetChart() };
-            Chartedemo4.Chart = new RadarChart{ Entries = data.GetChart() };
+            Chartedemo4.Chart = new RadarChart { Entries = data.GetChart() };
             Chartedemo5.Chart = new RadialGaugeChart { Entries = data.GetChart() };
             Chartedemo6.Chart = new BarChart { Entries = data.GetChart() };
         }

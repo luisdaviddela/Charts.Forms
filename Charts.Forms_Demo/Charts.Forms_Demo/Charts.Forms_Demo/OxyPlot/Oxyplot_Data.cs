@@ -8,8 +8,7 @@ namespace Charts.Forms_Demo
 {
     public class Oxyplot_Data
     {
-        public PlotModel PieModel { get; set; }
-        public PlotModel AreaModel { get; set; }
+        
         public PlotModel CreatePieChart()
         {
             var model = new PlotModel { Title = "World population by continent" };
@@ -36,7 +35,7 @@ namespace Charts.Forms_Demo
                 Title = "AreaSeries",
                 Subtitle = "Demo "
             };
-            var series = new TwoColorAreaSeries { Title = "series" };
+            var series = new AreaSeries { Title = "series" };
             for (double x = 1; x <= 10; x++)
             {
                 series.Points.Add(new DataPoint(x, (-1 * (x * x) + 50)));
