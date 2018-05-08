@@ -21,6 +21,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Syncfusion\Views\ChartGasAsociado.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Syncfusion\Views\ChartTipoCambio.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Syncfusion\GraficasTabbed.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Syncfusion\Views\ChartLinesMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

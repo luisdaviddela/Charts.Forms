@@ -13,7 +13,7 @@ namespace Charts.Forms_Demo
 		{
 			InitializeComponent();
 
-			MainPage = new Charts.Forms_Demo.ChartLinesMaster();
+			MainPage = new Charts.Forms_Demo.GraficasTabbed();
 		}
 
 		protected override void OnStart ()

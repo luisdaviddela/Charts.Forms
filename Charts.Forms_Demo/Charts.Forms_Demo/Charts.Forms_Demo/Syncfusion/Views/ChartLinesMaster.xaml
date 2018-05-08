@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              BackgroundColor="White"
+             Title="Master"
              x:Class="Charts.Forms_Demo.ChartLinesMaster">
     <ScrollView>
         <Grid>

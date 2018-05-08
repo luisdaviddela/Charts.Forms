@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             Title="Tipo de cambio"
+             xmlns:local="clr-namespace:Charts.Forms_Demo"
+             x:Class="Charts.Forms_Demo.ChartTipoCambio">
+    
+    <chart:SfChart Grid.Row="1" >
+
+        <!--LO UNICO QUE HACE ES HACER LAS COLUMNAS MÁS DELGADAS-->
+        <!--<chart:ColumnSeries>
+
+            <chart:ColumnSeries.DataMarker>
+
+                <chart:ChartDataMarker/>
+
+            </chart:ColumnSeries.DataMarker>
+
+        </chart:ColumnSeries>-->
+        <!--ZOOM-->
+        <chart:SfChart.ChartBehaviors>
+            <chart:ChartZoomPanBehavior ZoomMode="XY"/>
+        </chart:SfChart.ChartBehaviors>
+        <!--TITULOOOOOO-->
+        <chart:SfChart.Title>
+
+            <chart:ChartTitle Text="Presupuesto Inicial México"/>
+
+        </chart:SfChart.Title>
+        <!--PARTE DE ABAJO-->
+        <chart:SfChart.PrimaryAxis>
+            <chart:CategoryAxis EnableAutoIntervalOnZooming="True">
+                <chart:CategoryAxis.Title>
+                    <chart:ChartAxisTitle Text="Fechas"></chart:ChartAxisTitle>
+                </chart:CategoryAxis.Title>
+            </chart:CategoryAxis>
+        </chart:SfChart.PrimaryAxis>
+        <!--LATERAL DE LADO IZQUIER-->
+        <chart:SfChart.SecondaryAxis>
+            <chart:NumericalAxis>
+                <chart:NumericalAxis.Title>
+
+                    <chart:ChartAxisTitle Text="MMUSD"></chart:ChartAxisTitle>
+
+                </chart:NumericalAxis.Title>
+            </chart:NumericalAxis>
+        </chart:SfChart.SecondaryAxis>
+        <!--BINDING  CHARTS-->
+
+        <chart:SfChart.Series>
+
+            <chart:AreaSeries ItemsSource="{Binding Serie1}" 
+                               Color="{Binding Color}"
+                               XBindingPath="Fecha" 
+                               YBindingPath="TipoC">
+            </chart:AreaSeries>
+        </chart:SfChart.Series>
+    </chart:SfChart>
+</ContentPage>
