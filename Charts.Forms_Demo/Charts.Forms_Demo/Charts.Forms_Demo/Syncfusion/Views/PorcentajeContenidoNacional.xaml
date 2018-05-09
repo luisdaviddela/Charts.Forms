@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
-             Title="Gas asociado"
-             x:Class="Charts.Forms_Demo.ChartGasAsociado">
-    <chart:SfChart Grid.Row="1" >
+             Title="Porcentaje de contenido nacional"
+             x:Class="Charts.Forms_Demo.PorcentajeContenidoNacional">
+    <chart:SfChart  x:Name="Chart" SideBySideSeriesPlacement="False">
 
         <!--LO UNICO QUE HACE ES HACER LAS COLUMNAS MÁS DELGADAS-->
         <!--<chart:ColumnSeries>
@@ -45,21 +45,14 @@
             </chart:NumericalAxis>
         </chart:SfChart.SecondaryAxis>
         <!--BINDING  CHARTS-->
+        <chart:SfChart.Series>
+            <chart:ColumnSeries ItemsSource="{Binding Serie1}" Label="Luis" XBindingPath="Name" YBindingPath="Height">
+            </chart:ColumnSeries>
+            <chart:ColumnSeries   ItemsSource="{Binding Serie2}" Label="Reyna" XBindingPath="Name" YBindingPath="Height" >
 
-        <!--<chart:SfChart.Series>
+            </chart:ColumnSeries>
+        </chart:SfChart.Series>
 
-            <chart:AreaSeries ItemsSource="{Binding Serie1}" 
-                               Color="{Binding Color}"
-                               XBindingPath="Fecha" 
-                               YBindingPath="TipoC">
-            </chart:AreaSeries>
-        </chart:SfChart.Series>-->
-        <chart:StackingAreaSeries Opacity="0.7" Color="Gray" ItemsSource ="{Binding Serie1}" XBindingPath="Nombre" YBindingPath="Valor"/>
-        <chart:StackingAreaSeries Opacity="0.7"   Color="LawnGreen" ItemsSource ="{Binding Serie2}" XBindingPath="Nombre" YBindingPath="Valor"/>
-        <chart:StackingAreaSeries Opacity="0.7" Color="Blue" ItemsSource ="{Binding Serie3}" XBindingPath="Nombre" YBindingPath="Valor"/>
-        <chart:StackingAreaSeries Opacity="0.7" Color="Red" ItemsSource ="{Binding Serie4}" XBindingPath="Nombre" YBindingPath="Valor"/>
-        <chart:StackingAreaSeries Opacity="0.7" Color="SeaGreen" ItemsSource ="{Binding Serie5}" XBindingPath="Nombre" YBindingPath="Valor"/>
-        <chart:StackingAreaSeries Opacity="0.7" Color="DarkSeaGreen" ItemsSource ="{Binding Serie6}" XBindingPath="Nombre" YBindingPath="Valor"/>
-        
+
     </chart:SfChart>
 </ContentPage>

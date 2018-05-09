@@ -7,4 +7,5 @@
     <local:ChartLinesMaster></local:ChartLinesMaster>
     <local:ChartTipoCambio></local:ChartTipoCambio>
     <local:ChartGasAsociado></local:ChartGasAsociado>
+    <local:PorcentajeContenidoNacional></local:PorcentajeContenidoNacional>
 </TabbedPage>
