@@ -51,4 +51,9 @@ namespace Charts.Forms_Demo
         public string Name { get; set; }
         public double Height { get; set; }
     }
+    public class Car
+    {
+        public string Name { get; set; }
+        public double Height { get; set; }
+    }
 }

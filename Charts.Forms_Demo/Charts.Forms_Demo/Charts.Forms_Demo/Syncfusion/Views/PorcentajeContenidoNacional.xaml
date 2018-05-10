@@ -46,13 +46,8 @@
         </chart:SfChart.SecondaryAxis>
         <!--BINDING  CHARTS-->
         <chart:SfChart.Series>
-            <chart:ColumnSeries ItemsSource="{Binding Serie1}" Label="Luis" XBindingPath="Name" YBindingPath="Height">
-            </chart:ColumnSeries>
-            <chart:ColumnSeries   ItemsSource="{Binding Serie2}" Label="Reyna" XBindingPath="Name" YBindingPath="Height" >
-
-            </chart:ColumnSeries>
+            <chart:ColumnSeries Color="LightSkyBlue" ItemsSource="{Binding Serie1}" Label="Luis" XBindingPath="Name" YBindingPath="Height"></chart:ColumnSeries>
+            <chart:ColumnSeries  Color="DarkGreen" ItemsSource="{Binding Serie2}" Label="Reyna" XBindingPath="Name" YBindingPath="Height" ></chart:ColumnSeries>
         </chart:SfChart.Series>
-
-
     </chart:SfChart>
 </ContentPage>

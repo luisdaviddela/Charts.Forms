@@ -12,15 +12,16 @@ namespace Charts.Forms_Demo
         {
             Serie1 = new List<Person>()
             {
-                new Person { Name= "Luis", Height=10},
-                new Person { Name= "Reyna", Height=8}
+                new Person { Name= "2013", Height=100},
+                new Person { Name= "2014", Height=100},
+                new Person { Name= "2015", Height=100},
+                
             };
-
-
             Serie2 = new List<Person>()
             {
-                new Person { Name= "Luis", Height=8},
-                new Person { Name= "Reyna", Height=7}
+                new Person { Name= "2013", Height=17},
+                new Person { Name= "2014", Height=25},
+                new Person { Name= "2015", Height=28},
             };
         }
     }
