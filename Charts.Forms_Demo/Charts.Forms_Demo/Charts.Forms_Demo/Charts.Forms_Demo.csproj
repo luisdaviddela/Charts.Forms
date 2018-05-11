@@ -21,6 +21,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Syncfusion\Views\ChartDonaTest.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Syncfusion\Views\ChartDeudas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Syncfusion\Views\PorcentajeContenidoNacional.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

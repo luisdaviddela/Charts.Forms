@@ -8,4 +8,7 @@
     <local:ChartTipoCambio></local:ChartTipoCambio>
     <local:ChartGasAsociado></local:ChartGasAsociado>
     <local:PorcentajeContenidoNacional></local:PorcentajeContenidoNacional>
+    <local:DOnutPrueba></local:DOnutPrueba>
+    <local:ChartDeudas></local:ChartDeudas>
+    <local:ChartDonaTest></local:ChartDonaTest>
 </TabbedPage>

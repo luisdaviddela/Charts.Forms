@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Donut chart"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             x:Class="Charts.Forms_Demo.ChartDonaTest">
+    <chart:SfChart Grid.Row="1" >
+
+        <!--LO UNICO QUE HACE ES HACER LAS COLUMNAS MÁS DELGADAS-->
+        <!--<chart:ColumnSeries>
+
+            <chart:ColumnSeries.DataMarker>
+
+                <chart:ChartDataMarker/>
+
+            </chart:ColumnSeries.DataMarker>
+
+        </chart:ColumnSeries>-->
+        <!--ZOOM-->
+        <chart:SfChart.ChartBehaviors>
+            <chart:ChartZoomPanBehavior ZoomMode="XY"/>
+        </chart:SfChart.ChartBehaviors>
+        <!--TITULOOOOOO-->
+        <chart:SfChart.Title>
+
+            <chart:ChartTitle Text="Primeros 5 con más deuda"/>
+
+        </chart:SfChart.Title>
+        <!--PARTE DE ABAJO-->
+        <chart:SfChart.PrimaryAxis>
+            <chart:CategoryAxis EnableAutoIntervalOnZooming="True">
+                <chart:CategoryAxis.Title>
+                    <chart:ChartAxisTitle Text=""></chart:ChartAxisTitle>
+                </chart:CategoryAxis.Title>
+            </chart:CategoryAxis>
+        </chart:SfChart.PrimaryAxis>
+        <!--LATERAL DE LADO IZQUIER-->
+        <chart:SfChart.SecondaryAxis>
+            <chart:NumericalAxis>
+                <chart:NumericalAxis.Title>
+
+                    <chart:ChartAxisTitle Text="Deuda en MDP"></chart:ChartAxisTitle>
+
+                </chart:NumericalAxis.Title>
+            </chart:NumericalAxis>
+        </chart:SfChart.SecondaryAxis>
+        <!--BINDING  CHARTS-->
+
+        <chart:SfChart.Series>
+
+            <chart:PieSeries ItemsSource ="{Binding Serie1}" XBindingPath="Name" YBindingPath="Height"/>
+        </chart:SfChart.Series>
+    </chart:SfChart>
+</ContentPage>
